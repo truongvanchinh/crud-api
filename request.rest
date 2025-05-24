@@ -1,0 +1,29 @@
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "name": "Nguyễn Văn a",
+  "email": "a@example.com",
+  "age": 25
+}
+
+### Lấy toàn bộ người dùng
+GET http://localhost:3000/api/users?page=1&limit=10
+
+
+### Lấy người dùng theo ID
+GET http://localhost:3000/api/users/682c29a8f03ca581600011ce
+
+### Cập nhật tên người dùng
+PUT http://localhost:3000/api/users/682c29a8f03ca581600011ce
+Content-Type: application/json
+
+{
+  "name": "Nguyễn Văn A Updated",
+  "age": 28
+}
+
+### Xóa người dùng
+DELETE http://localhost:3000/api/users/682c29a8f03ca581600011ce
+
+
